@@ -3,9 +3,7 @@ using namespace std;
 
 main()
 {
-	int n;
-	cout << "Inter the number n ";
-		cin >> n;
+	
 	int cache1 = 1;
 	int cache2 = 1;
 	int cache3;
