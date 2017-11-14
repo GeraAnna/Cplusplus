@@ -3,25 +3,9 @@
 using namespace std;
 
 void Counter(long long number, int &less, int &more, int &equal);
+long long Compare(long long number, int less, int more, int equal);
 
-{
-	int prev = number % 10;
-	int next;
-	less = more = equal;
-	while (number)
-	{
-		next = number % 10
-			if (prev == next)
-				equal++;
-			else
-				if (prev > next)
-					less++;
-				else
-					more++;
-		prev = number;
-		number / 10;
-	}
-}
+
 int main()
 {
 	long long number;
@@ -29,7 +13,7 @@ int main()
 	cout << "Enter number:" << endl;
 	cin >> number;
 	Counter(number, e, m, l);
-	long long k = Compare(e, m, l);
+	long long k = Compare(number, e, m, l);
 	cout << k << endl;
 
 	system("pause");
@@ -37,7 +21,7 @@ int main()
 	return 0;
 }
 
-long long Compare(long long number, int less, int more, int equal);
+long long Compare(long long number, int less, int more, int equal)
 {
 	if (less > 0 && more == equal == 0)
 		cout << "Strict waning" << endl;
@@ -56,4 +40,24 @@ long long Compare(long long number, int less, int more, int equal);
 					else
 						cout << "Unordered" << endl;
 	return 1;
+}
+
+void Counter(long long number, int &less, int &more, int &equal)
+{
+	int prev = number % 10;
+	int next;
+	less = more = equal;
+	while (number)
+	{
+		next = number % 10
+			if (prev == next)
+				equal++;
+			else
+				if (prev > next)
+					less++;
+				else
+					more++;
+		prev = number;
+		number / 10;
+	}
 }
