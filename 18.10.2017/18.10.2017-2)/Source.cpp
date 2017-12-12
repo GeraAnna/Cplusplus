@@ -50,13 +50,13 @@ void Counter(long long number, int &less, int &more, int &equal)
 	while (number)
 	{
 		next = number % 10;
-			if (prev == next)
-				equal++;
+		if (prev == next)
+			equal++;
+		else
+			if (prev > next)
+				less++;
 			else
-				if (prev > next)
-					less++;
-				else
-					more++;
+				more++;
 		prev = number;
 		number / 10;
 	}

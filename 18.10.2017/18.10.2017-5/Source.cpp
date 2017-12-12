@@ -2,19 +2,18 @@
 
 using namespace std;
 
-long long changeNumber(long long n, int b, int c);
+long long deleteNumber(long long n, int b, int c);
 
 int main()
 {
 	long long a;
-	int b, c;
+	int b;
 	cout << "Enter number:" << endl;
 	cin >> a;
-	cout << "Wich number do you want to change?" << endl;
+	cout << "Wich number you want to delete?" << endl;
 	cin >> b;
-	cout << " On which number do you want to replace?" << endl;
-	cin >> c;
-	long long k = changeNumber(a, b, c);
+
+	long long k = deleteNumber(a, b);
 	cout << k << endl;
 
 	system("pause");
@@ -22,18 +21,17 @@ int main()
 	return 0;
 }
 
-long long changeNumber(long long n, int b, int c)
+long long deleteNumber(long long n, int b)
 {
 	long long number = n, rev = 0;
-	int digit, change = b, replace = c;
+	int digit, del = b;
 	while (number)
 	{
 		digit = number % 10;
-		if (digit == change)
+		if (digit != del)
 		{
-			digit = replace;
+			rev = (rev * 10) + digit;
 		}
-		rev = (rev * 10) + digit;
 		number = number / 10;
 	}
 	number = 0;
