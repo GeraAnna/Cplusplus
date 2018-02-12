@@ -1,0 +1,4 @@
+﻿  stdafx.cpp
+  ConsoleDllLoader.cpp
+d:\cplusplus\2 sem\gerasimenko08.02.2018-pr2\consoledllloader\consoledllloader.cpp(2): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+LINK : fatal error LNK1104: cannot open file 'D:\Cplusplus\2 sem\Gerasimenko08.02.2018-pr2\Debug\Mathlib.lib'

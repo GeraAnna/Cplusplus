@@ -1,0 +1,3 @@
+﻿  stdafx.cpp
+  unittest1.cpp
+LINK : fatal error LNK1104: cannot open file 'D:\Cplusplus\2 sem\Gerasimenko08.02.2018-pr2\Debug\Mathlib.lib'
