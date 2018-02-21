@@ -1,6 +1,6 @@
 #pragma once
 
-#ifdef MATHLIB_EXPORTS
+#ifdef Gerasimenko08022018pr2_EXPORTS
 #define MATHLIB_API __declspec(dllexport) 
 #else
 #define MATHLIB_API __declspec(dllimport) 
