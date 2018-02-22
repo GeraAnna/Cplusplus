@@ -132,7 +132,7 @@ MATHLIB_API void Math::DisplayArray(const int * a, int n)
 			{
 				for (int j = 0; j < i; j++)
 				{
-					if (b[j] > b[j + 1])
+					if (b[j] < b[j + 1])
 					{
 						Swap(a + j, a + j + 1);
 						Swap(b + j, b + j + 1);

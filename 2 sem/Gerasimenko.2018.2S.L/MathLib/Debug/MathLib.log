@@ -1,4 +1,4 @@
 ﻿  MathLib.cpp
-d:\cplusplus\gerasimenko.2018.2s.l\mathlib\mathlib.cpp(4): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-  MathLib.vcxproj -> D:\Cplusplus\Gerasimenko.2018.2S.L\Debug\MathLib.dll
-  MathLib.vcxproj -> D:\Cplusplus\Gerasimenko.2018.2S.L\Debug\MathLib.pdb (Partial PDB)
+d:\cplusplus\2 sem\gerasimenko.2018.2s.l\mathlib\mathlib.cpp(4): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  MathLib.vcxproj -> D:\Cplusplus\2 sem\Gerasimenko.2018.2S.L\Debug\MathLib.dll
+  MathLib.vcxproj -> D:\Cplusplus\2 sem\Gerasimenko.2018.2S.L\Debug\MathLib.pdb (Partial PDB)
