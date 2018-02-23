@@ -108,7 +108,6 @@ MATHLIB_API void Math::DisplayArray(const int * a, int n)
 				unsigned int count1 = 0;
 				unsigned int count0 = 0;
 				int num = a[i];
-				unsigned int count = 0;
 				for (; num; num >>= 1)
 				{
 					if ((num & 1)==1)
