@@ -100,9 +100,9 @@ namespace UnitTest1
 		{
 			//Arrange
 			int n = 4;
-			int* InArray = new int[n] {2, 4, 6, 7};
+			int* InArray = new int[n] {0, 4, 6, 7};
 			int* OutArray = new int[n];
-			int* ExpNewArray = new int[n] {0, -1, 1, 3};
+			int* ExpNewArray = new int[n] {-1, -1, 1, 3};
 
 			//Act
 			Math::CountDif(InArray, OutArray, n);
@@ -120,9 +120,9 @@ namespace UnitTest1
 		{
 			//Arrange
 			int n = 4;
-			int* InArray = new int[n] {3, 8, 2, 5};
+			int* InArray = new int[n] {-5, 8, 2, 5};
 			int* OutArray = new int[n];
-			int* ExpNewArray = new int[n] {2, -2, 0, 1};
+			int* ExpNewArray = new int[n] {6, -2, 0, 1};
 
 			//Act
 			Math::CountDif(InArray, OutArray, n);

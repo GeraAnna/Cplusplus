@@ -108,6 +108,9 @@ MATHLIB_API void Math::DisplayArray(const int * a, int n)
 				unsigned int count1 = 0;
 				unsigned int count0 = 0;
 				int num = a[i];
+				if (num == 0)
+					b[i] = -1;
+				else 
 				for (; num; num >>= 1)
 				{
 					if ((num & 1)==1)
@@ -119,7 +122,6 @@ MATHLIB_API void Math::DisplayArray(const int * a, int n)
 						count0++;
 					}
 					b[i] = count1 - count0;
-					
 				}
 			}
 		}
