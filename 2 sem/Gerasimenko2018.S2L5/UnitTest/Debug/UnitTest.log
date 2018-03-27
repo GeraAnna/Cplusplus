@@ -1,0 +1,6 @@
+﻿  unittest1.cpp
+d:\cplusplus\2 sem\gerasimenko2018.s2l5\unittest\unittest1.cpp(24): warning C4018: '<': signed/unsigned mismatch
+d:\cplusplus\2 sem\gerasimenko2018.s2l5\unittest\unittest1.cpp(39): warning C4018: '<': signed/unsigned mismatch
+     Creating library D:\Cplusplus\2 sem\Gerasimenko2018.S2L5\Debug\UnitTest.lib and object D:\Cplusplus\2 sem\Gerasimenko2018.S2L5\Debug\UnitTest.exp
+  UnitTest.vcxproj -> D:\Cplusplus\2 sem\Gerasimenko2018.S2L5\Debug\UnitTest.dll
+  UnitTest.vcxproj -> D:\Cplusplus\2 sem\Gerasimenko2018.S2L5\Debug\UnitTest.pdb (Partial PDB)

@@ -1,6 +1,0 @@
-﻿  unittest1.cpp
-d:\cplusplus\2 sem\gerasimenko.2018.2s.l2\unittest\unittest1.cpp(32): warning C4700: uninitialized local variable 't' used
-     Creating library D:\Cplusplus\2 sem\Gerasimenko.2018.2S.L2\Debug\UnitTest.lib and object D:\Cplusplus\2 sem\Gerasimenko.2018.2S.L2\Debug\UnitTest.exp
-unittest1.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) double * * __cdecl Math::AllocateMemory(int)" (__imp_?AllocateMemory@Math@@YAPAPANH@Z) referenced in function "public: void __thiscall UnitTest::UnitTest1::CompareMatrixes(void)" (?CompareMatrixes@UnitTest1@UnitTest@@QAEXXZ)
-unittest1.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) double __cdecl Math::CompareMatrixes(double * *,double * *,int)" (__imp_?CompareMatrixes@Math@@YANPAPAN0H@Z) referenced in function "public: void __thiscall UnitTest::UnitTest1::CompareMatrixes(void)" (?CompareMatrixes@UnitTest1@UnitTest@@QAEXXZ)
-D:\Cplusplus\2 sem\Gerasimenko.2018.2S.L2\Debug\UnitTest.dll : fatal error LNK1120: 2 unresolved externals

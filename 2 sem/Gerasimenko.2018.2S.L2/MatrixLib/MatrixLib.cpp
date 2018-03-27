@@ -9,16 +9,16 @@
 
 using namespace std;
 
-MATRIXLIB_API double Math::sinTaylor(double x, double eps)
+MATRIXLIB_API double Math::SinTaylor(double x, double eps)
 {
 	double term = x, sum = 0;
-	/*int k = 0;
-	double a;
+	int k = 0;
+	double a = 0;
 	while (a > 0)
 	{
 		k++;
 		a = x - 2 * 3.14159265359*k;
-	}*/
+	}
 	for (int i = 1; fabs(term) > eps; i++)
 	{
 		sum += term;
@@ -122,7 +122,7 @@ MATRIXLIB_API void Math::InitMatrixSinTaylor(double** matrixeps, int n)
 		{
 			if (i == j)
 			{
-				matrixeps[i][j] = (i + j)*exp(i + j) / (sinTaylor(2 * i, eps) + 4);
+				matrixeps[i][j] = (i + j)*exp(i + j) / (SinTaylor(2 * i, eps) + 4);
 			}
 			else
 				matrixeps[i][j] = i - j;

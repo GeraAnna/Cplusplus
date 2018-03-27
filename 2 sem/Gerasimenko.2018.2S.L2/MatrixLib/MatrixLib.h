@@ -7,7 +7,7 @@
 
 namespace Math
 {
-	MATRIXLIB_API double sinTaylor(double, double);
+	MATRIXLIB_API double SinTaylor(double, double);
 	MATRIXLIB_API double ** AllocateMemory(int);
 	MATRIXLIB_API void DisplayMatrix(double**, int);
 	MATRIXLIB_API void FreeMemory(double**, int);

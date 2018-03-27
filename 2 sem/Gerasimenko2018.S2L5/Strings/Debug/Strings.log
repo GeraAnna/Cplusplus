@@ -1,0 +1,5 @@
+﻿  Strings.cpp
+d:\cplusplus\2 sem\gerasimenko2018.s2l5\strings\strings.cpp(60): warning C4018: '>': signed/unsigned mismatch
+d:\cplusplus\2 sem\gerasimenko2018.s2l5\strings\strings.cpp(64): warning C4018: '<': signed/unsigned mismatch
+  Strings.vcxproj -> D:\Cplusplus\2 sem\Gerasimenko2018.S2L5\Debug\Strings.dll
+  Strings.vcxproj -> D:\Cplusplus\2 sem\Gerasimenko2018.S2L5\Debug\Strings.pdb (Partial PDB)
