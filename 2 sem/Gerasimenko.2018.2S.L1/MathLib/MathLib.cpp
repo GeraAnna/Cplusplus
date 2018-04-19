@@ -121,8 +121,8 @@ MATHLIB_API void Math::DisplayArray(const int * a, int n)
 					{
 						count0++;
 					}
-					b[i] = count1 - count0;
 				}
+				b[i] = count1 - count0;
 			}
 		}
 

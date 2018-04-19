@@ -118,7 +118,7 @@ MATRIX_API int ** Math::NewMatrixAboveTheDioganal(int** matrix, int** newmatrix,
 	{
 		for (int j = i + 1; j < n + 1; j++)
 		{
-			newmatrix[i][j] = FindMaxUpElement(newmatrix, j - i + 2);
+			newmatrix[i][j] = FindMaxUpElement(newmatrix, j - i + 1);
 		}
 	}
 	return newmatrix;
@@ -143,7 +143,7 @@ MATRIX_API int ** Math::NewMatrixUnderTheDioganal(int** matrix, int** newmatrix,
 	{
 		for (int j = i - 1; j < i; j++)
 		{
-			newmatrix[i][j] = FindMaxDownElement(newmatrix, i - j + 2);
+			newmatrix[i][j] = FindMaxDownElement(newmatrix, i - j + 1);
 		}
 	}
 	return newmatrix;

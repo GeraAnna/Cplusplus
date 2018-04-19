@@ -1,3 +1,7 @@
-﻿  Matrix.cpp
-  Matrix.vcxproj -> D:\Cplusplus\2 sem\Gerasimenko.2S.L3\Debug\Matrix.dll
-  Matrix.vcxproj -> D:\Cplusplus\2 sem\Gerasimenko.2S.L3\Debug\Matrix.pdb (Partial PDB)
+﻿  stdafx.cpp
+  Matrix.cpp
+  dllmain.cpp
+  Generating Code...
+     Creating library D:\Cplusplus\2 sem\Gerasimenko.2018.2S.L3\Debug\Matrix.lib and object D:\Cplusplus\2 sem\Gerasimenko.2018.2S.L3\Debug\Matrix.exp
+  Matrix.vcxproj -> D:\Cplusplus\2 sem\Gerasimenko.2018.2S.L3\Debug\Matrix.dll
+  Matrix.vcxproj -> D:\Cplusplus\2 sem\Gerasimenko.2018.2S.L3\Debug\Matrix.pdb (Partial PDB)
