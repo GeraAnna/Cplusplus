@@ -1,0 +1,2 @@
+﻿Console.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) void __cdecl Textfiles::CreateFile(char *,int)" (__imp_?CreateFile@Textfiles@@YAXPADH@Z) referenced in function _main
+D:\Cplusplus\2 sem\Gerasimenko.2018.2S.L9\Debug\Console.exe : fatal error LNK1120: 1 unresolved externals

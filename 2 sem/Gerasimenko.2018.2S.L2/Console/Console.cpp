@@ -14,10 +14,10 @@ int main()
 	double** matrixeps = AllocateMemory(n);
 	InitMatrix(matrix, n);
 	std::cout << "Matrix by Sin" << std::endl;
-	//DisplayMatrix(matrix, n);
+	DisplayMatrix(matrix, n);
 	InitMatrixSinTaylor(matrixeps, n);
 	std::cout << "Matrix by SinTaylor" << std::endl;
-	//DisplayMatrix(matrixeps, n);
+	DisplayMatrix(matrixeps, n);
 	std::cout <<"The biggest difference is  "<< CompareMatrixes(matrix, matrixeps, n)<< std::endl;
 	FreeMemory(matrix, n);
 	FreeMemory(matrixeps, n);
