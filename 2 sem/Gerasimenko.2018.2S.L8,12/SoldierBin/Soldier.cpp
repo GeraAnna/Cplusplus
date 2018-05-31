@@ -338,6 +338,7 @@ void Soldier::EnterSoldier()
 	char surname[N] = "", firstname[N] = "", secondname[N] = "", country[N] = "", region[N] = "", district[N] = "", city[N] = "", street[N] = "", nationality[N] = "", position[N] = "", rank[N] = "", month[N] = "";
 	int index, house, flat, year, day;
 	cout << "Enter the surname: ";
+	cin.ignore();
 	cin.getline(surname, N, '\n');
 	cout << "Enter the first name: ";
 	cin.getline(firstname, N, '\n');
@@ -346,6 +347,7 @@ void Soldier::EnterSoldier()
 	cout << "Enter nationality: ";
 	cin >> nationality;
 	cout << "Enter the country: ";
+	cin.ignore();
 	cin.getline(country, N, '\n');
 	cout << "Enter the region: ";
 	cin.getline(region, N, '\n');
@@ -356,6 +358,7 @@ void Soldier::EnterSoldier()
 	cout << "Enter index of the city: ";
 	cin >> index;
 	cout << "Enter the street: ";
+	cin.ignore();
 	cin.getline(street, N, '\n');
 	cout << "Enter number of the house: ";
 	cin >> house;

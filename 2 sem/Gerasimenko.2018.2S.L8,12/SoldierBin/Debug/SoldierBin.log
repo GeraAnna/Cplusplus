@@ -1,36 +1,4 @@
-﻿  Source.cpp
-d:\cplusplus\2 sem\gerasimenko.2018.2s.l12\soldierbin\soldier.h(73): error C2535: 'void Soldier::EnterSoldier(void)': member function already defined or declared
-  d:\cplusplus\2 sem\gerasimenko.2018.2s.l12\soldierbin\soldier.h(52): note: see declaration of 'Soldier::EnterSoldier'
-d:\cplusplus\2 sem\gerasimenko.2018.2s.l12\soldierbin\source.cpp(80): error C3867: 'Soldier::EnterSoldier': non-standard syntax; use '&' to create a pointer to member
-d:\cplusplus\2 sem\gerasimenko.2018.2s.l12\soldierbin\source.cpp(158): warning C4244: 'initializing': conversion from 'std::streamoff' to 'long', possible loss of data
-d:\cplusplus\2 sem\gerasimenko.2018.2s.l12\soldierbin\source.cpp(175): error C3861: 'open': identifier not found
-d:\cplusplus\2 sem\gerasimenko.2018.2s.l12\soldierbin\source.cpp(176): error C3861: 'chsize': identifier not found
-d:\cplusplus\2 sem\gerasimenko.2018.2s.l12\soldierbin\source.cpp(177): error C3861: 'close': identifier not found
-  Soldier.cpp
-d:\cplusplus\2 sem\gerasimenko.2018.2s.l12\soldierbin\soldier.h(73): error C2535: 'void Soldier::EnterSoldier(void)': member function already defined or declared
-  d:\cplusplus\2 sem\gerasimenko.2018.2s.l12\soldierbin\soldier.h(52): note: see declaration of 'Soldier::EnterSoldier'
-d:\cplusplus\2 sem\gerasimenko.2018.2s.l12\soldierbin\soldier.cpp(43): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(136): note: see declaration of 'strcpy'
-d:\cplusplus\2 sem\gerasimenko.2018.2s.l12\soldierbin\soldier.cpp(54): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(136): note: see declaration of 'strcpy'
-d:\cplusplus\2 sem\gerasimenko.2018.2s.l12\soldierbin\soldier.cpp(65): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(136): note: see declaration of 'strcpy'
-d:\cplusplus\2 sem\gerasimenko.2018.2s.l12\soldierbin\soldier.cpp(88): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(136): note: see declaration of 'strcpy'
-d:\cplusplus\2 sem\gerasimenko.2018.2s.l12\soldierbin\soldier.cpp(106): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(136): note: see declaration of 'strcpy'
-d:\cplusplus\2 sem\gerasimenko.2018.2s.l12\soldierbin\soldier.cpp(117): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(136): note: see declaration of 'strcpy'
-d:\cplusplus\2 sem\gerasimenko.2018.2s.l12\soldierbin\soldier.cpp(137): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(136): note: see declaration of 'strcpy'
-d:\cplusplus\2 sem\gerasimenko.2018.2s.l12\soldierbin\soldier.cpp(148): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(136): note: see declaration of 'strcpy'
-d:\cplusplus\2 sem\gerasimenko.2018.2s.l12\soldierbin\soldier.cpp(159): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(136): note: see declaration of 'strcpy'
-d:\cplusplus\2 sem\gerasimenko.2018.2s.l12\soldierbin\soldier.cpp(170): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(136): note: see declaration of 'strcpy'
-d:\cplusplus\2 sem\gerasimenko.2018.2s.l12\soldierbin\soldier.cpp(181): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(136): note: see declaration of 'strcpy'
-d:\cplusplus\2 sem\gerasimenko.2018.2s.l12\soldierbin\soldier.cpp(219): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(136): note: see declaration of 'strcpy'
-  Generating Code...
+﻿  Soldier.cpp
+d:\cplusplus\2 sem\gerasimenko.2018.2s.l8,12\soldierbin\soldier.cpp(339): warning C4101: 'day': unreferenced local variable
+  SoldierBin.vcxproj -> D:\Cplusplus\2 sem\Gerasimenko.2018.2S.L8,12\Debug\SoldierBin.exe
+  SoldierBin.vcxproj -> D:\Cplusplus\2 sem\Gerasimenko.2018.2S.L8,12\Debug\SoldierBin.pdb (Partial PDB)

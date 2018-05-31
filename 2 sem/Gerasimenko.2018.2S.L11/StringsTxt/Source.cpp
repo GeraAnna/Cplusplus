@@ -32,7 +32,7 @@ void CreateNewFile(char * fileName,char* string, int n)
 {
 	int max, min;
 	ofstream streamOut(fileName);
-		if (!streamOut.is_open)
+		if (!streamOut.is_open())
 		{
 			cout << "Cannot open file to write!" << endl;
 			system("pause");
@@ -58,7 +58,8 @@ int ContentsFile(char * fileName)
 		exit(1);
 	}
 
-	int count = 0, term;
+	int count = 0;
+	char term;
 
 	while (!streamIn.eof())
 	{

@@ -49,8 +49,8 @@ int GetYear() const;
 char* GetMonth() const;
 int GetDay() const;
 
-void EnterSoldier();
 void DisplaySoldier();
+void EnterSoldier();
 
 private:
 	char* surname;
@@ -70,7 +70,7 @@ private:
 	char* month;
 	char* position;
 	char* rank;
-	void EnterSoldier();
+	
 	char* AllocateMemory(char*);
     int* AllocateMemory(int);
 };

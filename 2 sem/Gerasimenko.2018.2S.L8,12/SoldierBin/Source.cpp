@@ -1,6 +1,7 @@
 #include <fstream>
 #include <iostream>
 #include "Soldier.h"
+#include <io.h>
 
 using namespace std;
 
@@ -77,7 +78,7 @@ void InitFile(char * fileName)
 	char ok = 'y';
 	while (ok == 'y')
 	{
-		man.EnterSoldier;
+		man.EnterSoldier();
 		streamOut.write((char*)&man, bufSize);
 		cout << " If do you want to continue, press 'y' :";
 		cin >> ok;
@@ -199,8 +200,36 @@ void InitNameFile(char * fileName)
 	system("cls");
 }
 
-void SortingFile(char *)
+void SortingFile(char * fileName)
 {
+	bool flag = true;
+	while (flag)
+	{
+		fstream streamInOut(fileName, ios::in | ios::out | ios::binary);
+		if (!streamInOut.is_open())
+		{
+			cout << "Can't open file to read and write!";
+			SystemFun();
+			return;
+		}
+		flag = false;
+		Soldier manOne, manTwo;
+		int bufSize = sizeof(Soldier);
+		streamInOut.read((char*)&manOne, bufSize);
+		while (streamInOut.read((char*)&manTwo, bufSize))
+		{
+			if (manTwo.GetYear() < manOne.GetYear())
+			{
+				streamInOut.seekp(-2 * bufSize, ios::cur);
+				streamInOut.write((char*)&manTwo, bufSize);
+				streamInOut.write((char*)&manOne, bufSize);
+				flag = true;
+			}
+			streamInOut.seekp(-bufSize, ios::cur);
+			streamInOut.read((char*)&manOne, bufSize);
+		}
+		streamInOut.close();
+	}
 }
 
 int Menu()
