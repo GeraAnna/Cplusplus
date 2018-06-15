@@ -8,17 +8,17 @@ Numbers::Numbers(int numberInDecimalSystem, int ultimateSystem)
 {
 	this->SetNumberInDecimalSys(numberInDecimalSystem);
 	this->SetUltimateSystem(ultimateSystem);
-	this->SetNumberInUltimateSys(numberInDecimalSystem);
+	this->SetNumberInUltimateSys();
 }
 
 void Numbers::SetUltimateSystem(int ultimateSystem)
 {
-	this->ultimateSystem;
+	this->ultimateSystem = ultimateSystem;
 }
 
 void Numbers::SetNumberInDecimalSys(int numberInDecimalSystem)
 {
-	this->numberInDecimalSystem;
+	this->numberInDecimalSystem = numberInDecimalSystem;
 }
 
 int Numbers::GetUltimateSystem()
@@ -40,7 +40,7 @@ void Numbers::DisplayNumber()
 {
 	cout << GetNumberInDecimalSys() << ", \t";
 	cout << GetUltimateSystem() << ", \t";
-	cout << GetNumberInUltimateSys() << ".";
+	cout << GetNumberInUltimateSys() << "." << endl;
 }
 
 void Numbers::EnterNumber()
@@ -48,22 +48,26 @@ void Numbers::EnterNumber()
 
 }
 
-void Numbers::SetNumberInUltimateSys(int)
+void Numbers::SetNumberInUltimateSys()
 {
-	 strcpy(numberInUltimateSystem,TransformToSys());
+	TransformToSys();
+	// strcpy(numberInUltimateSystem, temp);
 }
 
-char* Numbers::TransformToSys()
+void Numbers::TransformToSys()
 {
 	char * performance = new char[LengthOfNumberInUltimateSys()];
 	int d = GetNumberInDecimalSys();
 	int u = GetUltimateSystem();
-	for (int i = 0; d; i++)
+	int i = 0;
+	for (; d; i++)
 	{
 		performance[i] = IntToChar(d % u);
 		d /= u;
 	}
-	return ReverseStr(performance);
+	performance[i] = '\0';
+	ReverseStr(performance);
+	strcpy(numberInUltimateSystem, performance);
 }
 
 int Numbers::LengthOfNumberInUltimateSys()
@@ -86,7 +90,7 @@ char Numbers::IntToChar(int n)
 	return symbols[n];
 }
 
-char* Numbers::ReverseStr(char* performance)
+void Numbers::ReverseStr(char* performance)
 {
 	int n = strlen(performance);
 
@@ -94,7 +98,7 @@ char* Numbers::ReverseStr(char* performance)
 	{
 		Swap(performance[i], performance[n - i - 1]);
 	}
-	return performance;
+	//return performance;
 }
 
 void Numbers::Swap(char & a, char & b)

@@ -17,15 +17,15 @@ public:
 private:
 	void SetUltimateSystem(int);
 	void SetNumberInDecimalSys(int);
-	void SetNumberInUltimateSys(int);
+	void SetNumberInUltimateSys();
 	int ultimateSystem;
 	int numberInDecimalSystem;
 	char numberInUltimateSystem[N];
 
-	char* TransformToSys();
+	void TransformToSys();
 	int LengthOfNumberInUltimateSys();
 	char IntToChar(int);
-	char* ReverseStr(char*);
+	void ReverseStr(char*);
 	static void Swap(char&, char&);
 };
 #endif

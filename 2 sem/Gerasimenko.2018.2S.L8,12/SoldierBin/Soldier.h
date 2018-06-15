@@ -9,25 +9,6 @@ Soldier(){}
 Soldier(char*, char*, char*, int, char*, char*, char*, char*, char*, int, int, char*, int, char*, int, char*, char*);
 ~Soldier();
 
-void SetFirsName(char*);
-void SetSecondName(char*);
-void SetSurname(char*);
-void SetAdress(int, char*, char*, char*, char*, char*, int, int);
-void SetNationality(char*);
-void SetDateOfBirth(int, char*, int);
-void SetPosition(char*);
-void SetRank(char*);
-void SetIndex(int);
-void SetCountry(char*);
-void SetRegion(char*);
-void SetDistrict(char*);
-void SetCity(char*);
-void SetStreet(char*);
-void SetHouseNumber(int);
-void SetFlatNumber(int);
-void SetYear(int);
-void SetMonth(char*);
-void SetDay(int);
 
 char* GetFirstName() const;
 char* GetSecondName() const;
@@ -53,6 +34,26 @@ void DisplaySoldier();
 void EnterSoldier();
 
 private:
+	void SetStudent(char*, char*, char*, int, char*, char*, char*, char*, char*, int, int, char*, int, char*, int, char*, char*);
+	void SetFirsName(char*);
+	void SetSecondName(char*);
+	void SetSurname(char*);
+	void SetAdress(int, char*, char*, char*, char*, char*, int, int);
+	void SetNationality(char*);
+	void SetDateOfBirth(int, char*, int);
+	void SetPosition(char*);
+	void SetRank(char*);
+	void SetIndex(int);
+	void SetCountry(char*);
+	void SetRegion(char*);
+	void SetDistrict(char*);
+	void SetCity(char*);
+	void SetStreet(char*);
+	void SetHouseNumber(int);
+	void SetFlatNumber(int);
+	void SetYear(int);
+	void SetMonth(char*);
+	void SetDay(int);
 	char* surname;
 	char* firstname;
 	char* secondname;

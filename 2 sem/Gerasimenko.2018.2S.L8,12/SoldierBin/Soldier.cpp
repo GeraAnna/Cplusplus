@@ -3,17 +3,10 @@
 
 using namespace std;
 
-Soldier::Soldier(char *, char *, char *, int, char *, char *, char *, char *, char*, int, int, char *, int, char *, int, char *, char *)
+Soldier::Soldier(char * surname, char * firstname, char * secondname, int index, char * country, char * region, char * district, char * city, char* street, int house, int flat, char * nationality, int year, char * month, int date, char * position, char * rank)
 {
 	cout << "Constructor works!" << endl;
-
-	this->SetSurname(surname);
-	this->SetFirsName(firstname);
-	this->SetSecondName(secondname);
-	this->SetAdress(index, country, region, district, city, street, house, flat);
-	this->SetNationality(nationality);
-	this->SetPosition(position);
-	this->SetRank(rank);
+	this->SetStudent(surname, firstname, secondname, index, country, region, district, city, street, house, flat, nationality, year, month, date, position, rank);
 }
 
 Soldier::~Soldier()
@@ -30,6 +23,19 @@ Soldier::~Soldier()
 	delete[] nationality;
 	delete[] position;
 	delete[] rank;
+	delete[] month;
+}
+
+void Soldier::SetStudent(char *, char *, char *, int, char *, char *, char *, char *, char *, int, int, char *, int, char *, int, char *, char *)
+{
+	this->SetSurname(surname);
+	this->SetFirsName(firstname);
+	this->SetSecondName(secondname);
+	this->SetAdress(index, country, region, district, city, street, house, flat);
+	this->SetNationality(nationality);
+	this->SetPosition(position);
+	this->SetRank(rank);
+	this->SetDateOfBirth(year, month, date);
 }
 
 void Soldier::SetFirsName(char * firstname)
@@ -88,11 +94,11 @@ void Soldier::SetNationality(char * nationality)
 	strcpy(this->nationality, nationality);
 }
 
-void Soldier::SetDateOfBirth(int year, char * month, int day)
+void Soldier::SetDateOfBirth(int year, char * month, int date)
 {
 	SetYear(year);
 	SetMonth(month);
-	SetDay(day);
+	SetDay(date);
 }
 
 void Soldier::SetPosition(char * position)
@@ -367,13 +373,17 @@ void Soldier::EnterSoldier()
 	cout << "Enter the year of birth: ";
 	cin >> year;
 	cout << "Enter the month of birth: ";
+	cin.ignore();
 	cin.getline(month, N, '\n');
 	cout << "Enter the day of birth: ";
 	cin >> date;
 	cout << "Enter the rank: ";
 	cin.getline(rank, N, '\n');
+	cin.ignore();
 	cout << "Enter the position: ";
+	cin.ignore();
 	cin.getline(position, N, '\n');
+	this->SetStudent(surname, firstname, secondname, index, country, region, district, city, street, house, flat, nationality, year, month, date, position, rank);
 }
 
 void Soldier::DisplaySoldier()

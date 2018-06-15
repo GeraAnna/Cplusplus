@@ -17,6 +17,8 @@ void InitFile(char*, Numbers);
 
 int main()
 {
+	/*Numbers number(1514, 16);
+	number.DisplayNumber();*/
 	char fileNameTxt[N] = "File.txt";
 	char fileNameBin[N] = "Filee";
 	CreateFile(fileNameTxt, 15);
@@ -26,6 +28,7 @@ int main()
 	FromTextToClassToBin(fileNameTxt, fileNameBin, p);
 	DisplayFile(fileNameBin);
 	system("pause");
+	system("cls");
 	return 0;
 }
 
@@ -48,10 +51,10 @@ void CreateFile(char * fileNameTxt, int n)
 	{
 		//cout << "enter value # " << i << " : ";
 		//cin >> temp;
-		int temp = n - i;
+		int temp = rand() % 1000;
 		streamOut.width(5);
 		streamOut << temp;
-		//cout << temp << endl;
+		cout << temp << endl;
 	}
 
 	streamOut.close();
@@ -79,20 +82,42 @@ int ContentsFile(char * fileName)
 	return count;
 }
 
+//void FromTextToClassToBin(char * fileNameTxt, char * fileNameBin, int ultimateSystem)
+//{
+//	int n = ContentsFile(fileNameTxt);
+//
+//	for (int i = 1; i < n+1; i++)
+//	{
+//		int tempNumber = InitNumbers(fileNameTxt, i);
+//		if (tempNumber > 0)
+//		{
+//			Numbers number(tempNumber, ultimateSystem);
+//			InitFile(fileNameBin, number);
+//		}
+//	}
+//
+//}
+
 void FromTextToClassToBin(char * fileNameTxt, char * fileNameBin, int ultimateSystem)
 {
-	int n = ContentsFile(fileNameTxt);
-
-	for (int i = 1; i < n+1; i++)
+	ifstream streamIn(fileNameTxt);
+	if (!streamIn.is_open())
 	{
-		int tempNumber = InitNumbers(fileNameTxt, i);
-		if (tempNumber > 0)
+		cout << "Cannot open file to read!" << endl;
+		system("pause");
+		exit(1);
+	}
+	int number;
+	while (!streamIn.eof())
+	{
+		streamIn >> number;
+		if (number > 0)
 		{
-			Numbers number(tempNumber, ultimateSystem);
+			Numbers number(number, ultimateSystem);
 			InitFile(fileNameBin, number);
 		}
 	}
-
+	streamIn.close();
 }
 
 void DisplayFile(char * fileName)

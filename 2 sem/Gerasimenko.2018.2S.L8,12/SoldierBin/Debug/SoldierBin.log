@@ -1,4 +1,7 @@
 ﻿  Soldier.cpp
-d:\cplusplus\2 sem\gerasimenko.2018.2s.l8,12\soldierbin\soldier.cpp(339): warning C4101: 'day': unreferenced local variable
+d:\cplusplus\2 sem\gerasimenko.2018.2s.l8,12\soldierbin\soldier.cpp(345): warning C4101: 'day': unreferenced local variable
+  Generating Code...
+  Skipping... (no relevant changes detected)
+  Source.cpp
   SoldierBin.vcxproj -> D:\Cplusplus\2 sem\Gerasimenko.2018.2S.L8,12\Debug\SoldierBin.exe
   SoldierBin.vcxproj -> D:\Cplusplus\2 sem\Gerasimenko.2018.2S.L8,12\Debug\SoldierBin.pdb (Partial PDB)
