@@ -13,7 +13,7 @@ istream & operator>>(istream & stream, String & string)
 	char  str[279];
 
 	stream >> str;
-	string = str;
+	string.SetString(str);
 
 	return stream;
 }
@@ -47,6 +47,11 @@ String String::operator+(const String & string)
 	return String(str);
 }
 
+String& String::operator+=(const String & string)
+{
+	return (*this + string);
+}
+
 const String & String::operator=(const String & string)
 {
 	if (this->string != string.string)
@@ -62,16 +67,57 @@ bool String::operator==(const String & string) const
 	return strcmp(this->GetString(), string.GetString()) == 0;
 }
 
+bool String::operator>(const String & string) const
+{
+	//return strcmp(this->GetString(), string.GetString()) > 0;
+	return this->CountSymbols() > string.CountSymbols();
+}
+
+bool String::operator<(const String & string) const
+{
+	//return strcmp(this->GetString(), string.GetString()) < 0;
+	return !(*this > string);
+}
+
 inline char & String::operator[](int i)
 {
 	return string[i];
+}
+
+void String::EnterString()
+{
+	cout << "Enter the string" << endl;
+	cin >> string;
+}
+
+void DisplayString(String & string)
+{
+	cout << string;
+}
+
+char * ConCat(String string1, const String & string)
+{	
+	return (String(string1) + string).GetString();
+}
+
+char String::FindByIndex(int i)
+{
+	return string[i];
+}
+
+bool ComparingStrings(String string1, const String & string)
+{
+	if (String(string1) == string)
+	{
+		return true;
+	}
 }
 
 void String::SetString(const char * string)
 {
 	if (string == nullptr)
 	{
-		throw std::invalid_argument("");
+		throw std::invalid_argument("String can not be empty!");
 	}
 
 	if (flag == true)
